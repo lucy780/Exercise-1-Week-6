@@ -1,0 +1,43 @@
+#include <iostream>
+#include <cstdlib>
+ 
+using namespace std;
+ 
+int main()
+ 
+{
+    int i, n;
+    float number, total=0, min=500, max=0, average;
+ 
+    cout << "How many numbers are there?: ";
+    cin >> n;
+ 
+    for (i=0; i<n; i+=1)
+ 
+        {
+ 
+        cout << "Enter the number: ";
+        cin >> n;
+ 
+        total = total + n;
+ 
+        if (n < min)
+        {
+            min = n;
+        }
+ 
+        if (n > max)
+        {
+            max = n;
+        }
+ 
+        }
+ 
+    cout << "Total is: " << total << endl;
+    cout << "Minimum is: " << min << endl;
+    cout << "Maximum is: " << max << endl;
+    cout << "Average is: " << total/n << endl;
+ 
+    system("pause");
+ 
+}
